@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aliou Bah Fitness Club</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <a href="" class="logo-links">
+            <img src="images/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="bars" id="menu-toggle">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="menu-container" id="menu">
+          <ul class="nav-menu">
+            <li class="menu-list">
+              <a href="index.html" class="nav-link">About Us</a>
+            </li>
+            <li class="menu-list">
+              <a href="service.html" class="nav-link"
+                >Display your creativity</a
+              >
+            </li>
+            <li class="menu-list">
+              <a href="membership.html" class="nav-link">Membership</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="contact">
+        <div class="form-area">
+          <h2>Gym Membership Form</h2>
+          <form id="membershipForm" action="#">
+            <div class="form-group">
+              <label class="form-label" for="name">Full Name</label>
+              <input class="form-input" type="text" id="name" name="name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-input" type="email" id="email" name="email" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input class="form-input" type="tel" id="phone" name="phone" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="dob">Date of Birth</label>
+              <input class="form-input" type="date" id="dob" name="dob" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="membership">Membership Plan</label>
+              <select class="form-input" id="membership" name="membership">
+                <option value="basic">Basic</option>
+                <option value="standard">Standard</option>
+                <option value="premium">Premium</option>
+              </select>
+            </div>
+            <button class="form-btn" type="submit" id="submitBtn">
+              Submit
+            </button>
+          </form>
+        </div>
+        <div>
+          <!-- <div id="map"></div> -->
+          <iframe
+            id="map"
+            src="https://maps.google.com/maps?q=40.699044,-73.989317&z=15&output=embed"
+            frameborder="0"
+            style="border: 0"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img src="images/logo.png" alt="" class="logo" />
+      <p>All &copy; Copyright Reserved 2024</p>
+      <p>
+        <a href="">facebook</a>
+        <a href="">twitter</a>
+        <a href="">instagram</a>
+      </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- <script src="js/map.js"></script> -->
+    <script src="js/form.js"></script>
+  </body>
+</html>
